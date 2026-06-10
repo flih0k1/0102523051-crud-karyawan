@@ -1,6 +1,3 @@
-# 0102523051-crud-karyawan
-Web Manajemen Data Karyawan berbasis Next.js 14 (App Router), Prisma ORM, dan MySQL Laragon. Dilengkapi fitur CRUD lengkap dengan handling File Upload, Cascading Dropdown, Validasi Email, Search &amp; Filter, serta Pagination.
-
 # 0102523051 - Manajemen Data Karyawan (CRUD Next.js + Prisma + MySQL)
 
 Proyek ini merupakan aplikasi web **Manajemen Data Karyawan** yang dibangun menggunakan **Next.js 14 (App Router)**, **TypeScript**, **Prisma ORM**, dan database **MySQL** melalui **Laragon**. Proyek ini melatih penanganan berbagai tipe input HTML umum (Text, Email, Radio, Dropdown, Cascading Dropdown, Checkbox, dan File Upload) dalam satu proyek nyata.
