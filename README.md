@@ -3,7 +3,7 @@ Web Manajemen Data Karyawan berbasis Next.js 14 (App Router), Prisma ORM, dan My
 
 # 0102523051 - Manajemen Data Karyawan (CRUD Next.js + Prisma + MySQL)
 
-[cite_start]Proyek ini merupakan aplikasi web **Manajemen Data Karyawan** yang dibangun menggunakan **Next.js 14 (App Router)**, **TypeScript**, **Prisma ORM**, dan database **MySQL** melalui **Laragon**[cite: 5, 6, 7, 8, 9]. [cite_start]Proyek ini melatih penanganan berbagai tipe input HTML umum (Text, Email, Radio, Dropdown, Cascading Dropdown, Checkbox, dan File Upload) dalam satu proyek nyata[cite: 4, 12, 13, 14, 15, 16, 17].
+Proyek ini merupakan aplikasi web **Manajemen Data Karyawan** yang dibangun menggunakan **Next.js 14 (App Router)**, **TypeScript**, **Prisma ORM**, dan database **MySQL** melalui **Laragon**. [cite_start]Proyek ini melatih penanganan berbagai tipe input HTML umum (Text, Email, Radio, Dropdown, Cascading Dropdown, Checkbox, dan File Upload) dalam satu proyek nyata[cite: 4, 12, 13, 14, 15, 16, 17].
 
 ## 🚀 Fitur Utama & Tugas Mandiri
 
