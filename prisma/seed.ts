@@ -1,0 +1,50 @@
+import { PrismaClient } from '@prisma/client';
+import { PrismaMariaDb } from '@prisma/adapter-mariadb';
+
+const adapter = new PrismaMariaDb({
+  host: 'localhost',
+  port: 3306,
+  user: 'root',
+  password: '',
+  database: 'db_karyawan',
+});
+
+const prisma = new PrismaClient({ adapter });
+
+async function main() {
+  console.log('🌱 Memulai proses seeding data master...');
+
+  // 1. Buat Department
+  const deptTech = await prisma.department.create({ data: { name: 'Technology' } });
+  const deptHR   = await prisma.department.create({ data: { name: 'Human Resource' } });
+
+  // 2. Buat Position
+  await prisma.position.createMany({
+    data: [
+      { name: 'Frontend Developer', departmentId: deptTech.id },
+      { name: 'Backend Developer',  departmentId: deptTech.id },
+      { name: 'HR Generalist',      departmentId: deptHR.id  },
+      { name: 'Recruitment Staff',  departmentId: deptHR.id  },
+    ]
+  });
+
+  // 3. Buat Skill
+  await prisma.skill.createMany({
+    data: [
+      { name: 'React.js'    },
+      { name: 'Node.js'     },
+      { name: 'MySQL'       },
+      { name: 'UI/UX Design'},
+    ]
+  });
+
+  console.log('✅ Seed berhasil!');
+}
+
+main()
+  .then(async () => { await prisma.$disconnect(); })
+  .catch(async (e) => { 
+    console.error('❌ Gagal:', e); 
+    await prisma.$disconnect();
+    process.exit(1);
+  });
